@@ -44,6 +44,18 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let ctaImg = document.getElementById('cta-img');
 ctaImg.src = siteContent["cta"]["img-src"];
 
+let nav = document.getElementsByTagName('nav');
+let a1 = document.createElement("a");
+a1.textContent = "Appended";
+a1.href = "#";
+nav[0].appendChild(a1);
+
+let a2 = document.createElement("a2");
+a2.textContent = "Prepended";
+a2.href = "#";
+nav[0].prepend(a2);
+
+
 let links = document.querySelectorAll('a');
 links[0].textContent = siteContent["nav"]["nav-item-1"];
 links[1].textContent = siteContent["nav"]["nav-item-2"];
