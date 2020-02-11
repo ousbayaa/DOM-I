@@ -52,6 +52,12 @@ links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
+
+Array.from(links).forEach( link => {
+  link.style.color = 'green';
+})
+
 let h1 = document.querySelector('.cta-text h1');
 h1.textContent = siteContent["cta"]["h1"];
 
@@ -64,6 +70,7 @@ topTextHeaders[1].textContent = siteContent["main-content"]["about-h4"];
 topTextHeaders[2].textContent = siteContent["main-content"]["services-h4"];
 topTextHeaders[3].textContent = siteContent["main-content"]["product-h4"];
 topTextHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
+topTextHeaders[5].textContent = siteContent["contact"]["contact-h4"];
 
 let midIMG = document.getElementById('middle-img');
 midIMG.src = siteContent["main-content"]["middle-img-src"];
@@ -73,4 +80,8 @@ bottomTextContent[0].textContent = siteContent["main-content"]["features-content
 bottomTextContent[1].textContent = siteContent["main-content"]["about-content"];
 bottomTextContent[2].textContent = siteContent["main-content"]["services-content"];
 bottomTextContent[3].textContent = siteContent["main-content"]["product-content"];bottomTextContent[4].textContent = siteContent["main-content"]["vision-content"];
+bottomTextContent[5].textContent = siteContent["contact"]["address"];
+bottomTextContent[6].textContent = siteContent["contact"]["phone"];
+bottomTextContent[7].textContent = siteContent["contact"]["email"];
+bottomTextContent[8].textContent = siteContent["footer"]["copyright"];
 
